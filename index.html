@@ -73,16 +73,34 @@
 		</div>
 	</nav>
 
-	<section class="portada">
+	<section id="portada" class="portada">
 		<div class="container">
 			<div class="row portada-titular">
 				<div class="col-xs-8 col-xs-offset-2 text-center">
 					<h2>Profesionales al Servicio del Hogar</h2>
 				</div>
 			</div>
-			<div class="portada-acciones text-center">
-				<a href="#" class="btn btn-default btn-accion1"><i class="icon-female"></i> accion</a>
-				<a href="#" class="btn btn-default btn-accion2"><i class="icon-envelope"></i> accion</a>
+			<div class="row portada-acciones text-center">
+				<form action="registro.php" method="post" class="form-inline" role="form">
+					<div class="form-group">
+				    <label class="sr-only" for="tipo">Tipo</label>
+				    <select class="form-control input-lg" id="tipo" required>
+						  <option value="">Tipo de Usuario</option>
+						  <option value="1">Cliente</option>
+						  <option value="2">Profesional</option>
+						  <option value="3">Proveedor</option>
+						</select>
+				  </div>
+					<div class="form-group">
+				    <label class="sr-only" for="email">Email</label>
+				    <input type="email" class="form-control input-lg" id="email" placeholder="Introduce tu email" required />
+				  </div>
+				  <div class="form-group">
+				    <label class="sr-only" for="nombre">Nombre</label>
+				    <input type="text" class="form-control input-lg" id="nombre" placeholder="Introduce tu nombre" required />
+				  </div>
+				  <button type="submit" class="btn btn-default btn-lg">Entrar</button>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -105,7 +123,7 @@
 			</div>
 			<div class="row">
 				<div class="text-center">
-					<a href="registro.html" class="btn btn-primary btn-lg">Regístrate</a>
+					<a href="#portada" class="btn btn-primary btn-lg">Regístrate</a>
 				</div>
 			</div>
 		</div>

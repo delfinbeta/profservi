@@ -154,11 +154,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portada-titular {
-	margin-top: 40vh;
+	margin-top: 20vh;
 }
 
 .portada-acciones {
-	bottom: 1em;
+	bottom: 3em;
 	left: 0;
 	position: absolute;
 	right: 0;
@@ -218,5 +218,9 @@ h1, h2, h3, h4, h5, h6 {
 	#menuWeb {
 		background-color: transparent;
 		margin-top: 20px;
+	}
+
+	.portada-titular {
+		margin-top: 40vh;
 	}
 }
