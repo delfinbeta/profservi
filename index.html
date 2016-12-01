@@ -81,26 +81,7 @@
 				</div>
 			</div>
 			<div class="row portada-acciones text-center">
-				<form action="registro.php" method="post" class="form-inline" role="form">
-					<div class="form-group">
-				    <label class="sr-only" for="tipo">Tipo</label>
-				    <select class="form-control input-lg" id="tipo" required>
-						  <option value="">Tipo de Usuario</option>
-						  <option value="1">Cliente</option>
-						  <option value="2">Profesional</option>
-						  <option value="3">Proveedor</option>
-						</select>
-				  </div>
-					<div class="form-group">
-				    <label class="sr-only" for="email">Email</label>
-				    <input type="email" class="form-control input-lg" id="email" placeholder="Introduce tu email" required />
-				  </div>
-				  <div class="form-group">
-				    <label class="sr-only" for="nombre">Nombre</label>
-				    <input type="text" class="form-control input-lg" id="nombre" placeholder="Introduce tu nombre" required />
-				  </div>
-				  <button type="submit" class="btn btn-default btn-lg">Entrar</button>
-				</form>
+				<button type="button" id="registro1" class="btn btn-default btn-lg">Regístrate</button>
 			</div>
 		</div>
 	</section>
@@ -121,10 +102,8 @@
 					<img src="img/ComoFunciona.jpg" alt="¿Cómo Funciona?" title="¿Cómo Funciona?" class="img-responsive" />
 				</div>
 			</div>
-			<div class="row">
-				<div class="text-center">
-					<a href="#portada" class="btn btn-primary btn-lg">Regístrate</a>
-				</div>
+			<div class="row text-center">
+				<button type="button" id="registro2" class="btn btn-primary btn-lg">Regístrate</button>
 			</div>
 		</div>
 	</section>
@@ -163,5 +142,17 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/profservi.js"></script>
+	<!-- Mailchimp Suscripcion -->
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script type="text/javascript">
+	function showMailingPopUp() {
+	  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"92b036a2d4a3b9411715eb987","lid":"09e59390e2"}) });
+	  document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+	};
+
+	document.getElementById("registro1").onclick = function() {showMailingPopUp()};
+	document.getElementById("registro2").onclick = function() {showMailingPopUp()};
+	</script>
+	<!-- /Mailchimp Suscripcion -->
 </body>
 </html>
