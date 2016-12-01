@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  background-color: #00008C;
+  background-color: #CCCCCC;
 }
 
 /*********************************************/
@@ -150,6 +150,10 @@ h1, h2, h3, h4, h5, h6 {
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 	margin: 0 1em;
+}
+
+.portada-titular {
+	margin-top: 40vh;
 }
 
 .portada-acciones {
@@ -194,9 +198,5 @@ h1, h2, h3, h4, h5, h6 {
 	#menuWeb {
 		background-color: transparent;
 		margin-top: 20px;
-	}
-
-	.portada-titular {
-		margin-top: 40vh;
 	}
 }
