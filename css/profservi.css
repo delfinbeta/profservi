@@ -18,7 +18,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: sans-serif;
-	color: #00008C;
+	color: #2980B9;
 }
 
 /*********************************************/
@@ -137,6 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .portada h2 {
 	color: #FFFFFF;
+	font-size: 3em;
 	font-style: italic;
 }
 
@@ -185,6 +186,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .derechos {
 	text-align: center;
+}
+
+/*********************************************/
+/*****             ProfServi             *****/
+/*********************************************/
+#profservi {
+	background-color: #2980B9;
+	color: #FFFFFF;
+}
+
+#profservi h1 {
+	color: #CCCCCC;
 }
 
 /*********************************************/
