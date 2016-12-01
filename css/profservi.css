@@ -100,18 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
   border-bottom: 3px solid #2980B9;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #FFFFFF;
+	background-color: rgba(200, 200, 200, .8);
+  color: #000000;
   margin: 0 2px;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	background-color: #FFFFFF;
   border-bottom: 3px solid #2980B9;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -136,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portada h2 {
-	color: #FFFFFF;
+	color: #000000;
 	font-size: 3em;
 	font-style: italic;
 }
@@ -154,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portada-titular {
+	background-color: rgba(250, 250, 250, .7);
 	margin-top: 20vh;
 }
 
