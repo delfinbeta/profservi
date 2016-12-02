@@ -139,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .portada h2 {
 	color: #000000;
-	font-size: 3em;
 	font-style: italic;
 }
 
@@ -157,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .portada-titular {
 	background-color: rgba(250, 250, 250, .7);
-	margin-top: 20vh;
+	margin-top: 30vh;
 }
 
 .portada-acciones {
@@ -206,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 /*********************************************/
 /*****         ¿Cómo lo hacemos?         *****/
 /*********************************************/
-#como_hacemos {
+#como_hacemos, .infografia {
 	margin-bottom: 2em;
 }
 
@@ -217,6 +216,10 @@ h1, h2, h3, h4, h5, h6 {
 	#menuWeb {
 		background-color: transparent;
 		margin-top: 20px;
+	}
+
+	.portada h2 {
+		font-size: 2.8em;
 	}
 
 	.portada-titular {
